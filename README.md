@@ -47,3 +47,16 @@ Random Forest | 0.9022 | 0.9331 | 0.8962 | 0.9314 | 0.9135 | 0.8018
 XGBoost | 0.8696 | 0.9284 | 0.8980 | 0.8627 | 0.8800 | 0.7380
 
 <!--METRICS_TABLE_END-->
+## Repo Structure
+```
+project/
+├── app.py
+├── requirements.txt
+├── heart.csv              # training data (add this)
+├── models/                # saved pipelines & metrics appear here after training
+└── README.md
+```
+
+## Notes
+- On Streamlit free tier, upload **only TEST** data in the app (smaller files) to conserve resources.
+- If `xgboost` fails to install on your platform, the app will still work with the other five models.
