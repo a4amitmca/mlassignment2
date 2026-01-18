@@ -80,12 +80,16 @@ XGBoost | 0.8696 | 0.9284 | 0.8980 | 0.8627 | 0.8800 | 0.7380
 | XGBoost (Ensemble) | XGBoost demonstrated high AUC and precision with strong predictive power. Performance can be further improved with hyperparameter tuning. |
 
 
-Final Verdict
-Based on the comparative evaluation of all six machine learning models on the Heart Disease dataset, ensemble‑based models and distance‑based classifiers demonstrated superior performance over simpler baseline models.
-Among all the models, k‑Nearest Neighbors (kNN) achieved the highest overall accuracy and F1‑score, indicating its strong ability to capture local patterns in the data after proper feature scaling. Random Forest, an ensemble model, provided the most stable and consistent performance across all evaluation metrics, including MCC, highlighting its robustness and reduced susceptibility to overfitting.
-Logistic Regression proved to be a reliable and interpretable baseline model with strong recall and ROC‑AUC, making it suitable for medical decision‑support scenarios where sensitivity is critical. Naive Bayes performed reasonably well despite its simplifying independence assumptions, showing robustness and efficiency.
-On the other hand, Decision Tree showed the weakest performance due to overfitting, emphasizing the limitation of single‑tree models on complex datasets. XGBoost delivered competitive results with high precision and AUC, and its performance could be further improved through hyperparameter tuning.
-Overall, the results indicate that ensemble models and well‑tuned algorithms are more suitable for heart disease prediction, as they effectively balance accuracy, robustness, and generalization capability.
+**Final Verdict**
+
+Based on the comparative evaluation of all six machine learning classifiers on the Heart Disease dataset, it is evident that ensemble‑based and distance‑based models outperform simpler baseline models in terms of overall predictive performance.
+
+Among the evaluated models, k‑Nearest Neighbors (kNN) achieved the highest accuracy and F1‑score, indicating its strong capability to capture local patterns in the data after proper feature scaling. Random Forest, an ensemble method, demonstrated the most consistent and balanced performance across all evaluation metrics, including the Matthews Correlation Coefficient (MCC), highlighting its robustness and reduced tendency to overfit.
+Logistic Regression served as a strong and interpretable baseline model with high recall and ROC‑AUC, making it suitable for healthcare applications where minimizing false negatives is critical. Naive Bayes showed stable and reliable performance despite its independence assumption, proving effective for this structured dataset.
+
+In contrast, Decision Tree exhibited the weakest performance due to overfitting, emphasizing the limitations of single‑tree models on complex medical datasets. XGBoost delivered competitive results with high precision and AUC, and its performance could be further enhanced through systematic hyperparameter tuning.
+
+Overall, the results indicate that ensemble models and well‑tuned classifiers are the most suitable approaches for heart disease prediction, as they provide a strong balance between accuracy, robustness, and generalization performance.
 <!--METRICS_TABLE_END-->
 ## Repo Structure
 ```
