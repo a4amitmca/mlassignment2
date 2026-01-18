@@ -7,13 +7,27 @@ Heart Disease dataset (Kaggle: `fedesoriano/heart-failure-prediction`).
 # Heart Disease Classification — End-to-End ML & Streamlit App
 
 ## Problem Statement
-Predict the presence of **heart disease** (binary: 0/1) using clinical and demographic features, and deploy an interactive web app for evaluation.
+The objective of this project is to build and compare multiple machine learning classification models to predict the presence of heart disease in a patient based on clinical and demographic features. The project also includes deployment of the trained models using a Streamlit web application to demonstrate model performance interactively.
 
 ## Dataset Description
-- Use the public *Heart Failure Prediction* dataset (Kaggle). Place `heart.csv` at project root.  
-- Target column: `HeartDisease` (0/1).  
-- Example feature columns: `Age, Sex, ChestPainType, RestingBP, Cholesterol, FastingBS, RestingECG, MaxHR, ExerciseAngina, Oldpeak, ST_Slope`.
-
+- Source: Kaggle
+- Type: Binary classification dataset
+- Target Variable: HeartDisease
+- 0 → No heart disease
+- 1 → Presence of heart disease
+- Number of Instances: 918
+- Number of Features: 11 input features + 1 targe 
+- Age – Age of the patient
+- Sex – Gender (M/F)
+- ChestPainType – Type of chest pain
+- RestingBP – Resting blood pressure
+- Cholesterol – Serum cholesterol
+- FastingBS – Fasting blood sugar
+- RestingECG – Resting ECG results
+- MaxHR – Maximum heart rate achieved
+- ExerciseAngina – Exercise induced angina
+- Oldpeak – ST depression
+- ST_Slope – Slope of the ST segment
 ## Files
 - `Heart_Disease.ipynb` — main notebook
 - `requirements.txt` — Python dependencies (xgboost optional)
