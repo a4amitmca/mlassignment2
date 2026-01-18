@@ -279,8 +279,7 @@ with train_tab:
             rep = reports.get(model_for_report)
             if rep:
                 plot_confusion_matrix(rep['cm'])
-                st.text("Classification Report:
-" + rep['cr'])
+                st.text("Classification Report:" + rep['cr'])
 
 with predict_tab:
     st.subheader("Use a trained model to predict on your TEST CSV")
@@ -310,8 +309,7 @@ with predict_tab:
                 if cm is not None:
                     plot_confusion_matrix(cm)
                 if cr is not None:
-                    st.text("Classification Report:
-" + cr)
+                    st.text("Classification Report:" + cr)
         else:
             st.warning("Could not run predictions. Make sure models are trained first.")
 
