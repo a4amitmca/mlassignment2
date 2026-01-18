@@ -10,10 +10,12 @@ Heart Disease dataset (Kaggle: `fedesoriano/heart-failure-prediction`).
 Predict the presence of **heart disease** (binary: 0/1) using clinical and demographic features, and deploy an interactive web app for evaluation.
 
 ## Dataset Description
-We use the **Heart Disease / Heart Failure Prediction** dataset widely derived from UCI heart disease databases and consolidated on Kaggle (918 rows, 12 features + target). Download `heart.csv` and place it under `data/`.
+- Use the public *Heart Failure Prediction* dataset (Kaggle). Place `heart.csv` at project root.  
+- Target column: `HeartDisease` (0/1).  
+- Example feature columns: `Age, Sex, ChestPainType, RestingBP, Cholesterol, FastingBS, RestingECG, MaxHR, ExerciseAngina, Oldpeak, ST_Slope`.
 
 ## Files
-- `Heart_Disease_Training.ipynb` — main notebook
+- `Heart_Disease.ipynb` — main notebook
 - `requirements.txt` — Python dependencies (xgboost optional)
 - `data/README.txt` — where to place `heart.csv`
 - `models/` — outputs (created when you run the notebook)
@@ -35,6 +37,13 @@ We use the **Heart Disease / Heart Failure Prediction** dataset widely derived f
 - If installing `xgboost` is problematic on your system, you can comment it out
   in `requirements.txt`. The notebook will still run and skip the XGBoost model.
 
+## Models Used
+- Logistic Regression
+- Decision Tree Classifier
+- k-Nearest Neighbors (kNN)
+- Naive Bayes (Gaussian)
+- Random Forest (Ensemble)
+- XGBoost (Ensemble)
 <!--METRICS_TABLE_START-->
 
 **ML Model Name** | **Accuracy** | **AUC** | **Precision** | **Recall** | **F1** | **MCC**
